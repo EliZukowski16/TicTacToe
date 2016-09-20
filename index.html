@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic-Tac-Toe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type ="text/javascript" src="./jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="./tictactoe.js"></script>
+<style type="text/css">
+.square {
+	width: 1.5em;
+	border: 1px solid #aaa;
+	height: 1.5em;
+	display: inline-table;
+	font-size: 20pt;
+	text-align: center;
+	vertical-align: top
+}
+
+.row {
+	font-size: 0px;
+	margin: 0 20%
+}
+</style>
+</head>
+<body>
+    <section id="board">
+        <div class="row">
+            <input id="square_0_0" class="square" maxlength=1 /> <input
+                id="square_0_1" class="square" maxlength=1 /> <input
+                id="square_0_2" class="square" maxlength=1  />
+        </div>
+        <div class="row">
+            <input id="square_1_0" class="square" maxlength=1 /> <input
+                id="square_1_1" class="square" maxlength=1 /> <input
+                id="square_1_2" class="square" maxlength=1 />
+        </div>
+        <div class="row">
+            <input id="square_2_0" class="square" maxlength=1 /> <input
+                id="square_2_1" class="square" maxlength=1 /> <input
+                id="square_2_2" class="square" maxlength=1 />
+        </div>
+        
+        <div id="errorMessage"></div>
+        
+        <button type="button" id="submit">Submit Move</button>
+    </section>
+</body>
+</html>
